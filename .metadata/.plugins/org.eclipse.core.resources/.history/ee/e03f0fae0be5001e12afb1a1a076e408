@@ -1,0 +1,22 @@
+package ejercicio01b;
+
+import utilidades.Leer;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Calculadora c = new Calculadora();
+		int a, b;
+		a=Leer.datoInt();
+		b=Leer.datoInt();
+		try {
+			System.out.println(c.dividir(a, b));
+		}catch(ArithmeticException e) {
+			System.err.println("El denominador no puede ser cero");
+		}catch(Exception e) {
+			System.err.println("Error Inesperado");
+		}
+	}
+
+}

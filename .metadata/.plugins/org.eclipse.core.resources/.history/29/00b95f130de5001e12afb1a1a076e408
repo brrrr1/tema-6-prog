@@ -1,0 +1,32 @@
+package ejercicio01b;
+
+import utilidades.Leer;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Calculadora c = new Calculadora();
+		int eleccion;
+		eleccion=Leer.datoInt();
+		do {
+		switch(eleccion) {
+		case 1:
+			try {
+				System.out.println(c.dividir(2, 0));
+			}catch(ArithmeticException e) {
+				System.err.println("El denominador no puede ser cero");
+			}catch(Exception e) {
+				System.err.println("Error Inesperado");
+			}
+			break;
+			
+		case 2:
+			System.out.println(c.hacerRaizCuadrada(4));
+			break;
+		}
+		}while(eleccion!=0);
+			
+	}
+
+}

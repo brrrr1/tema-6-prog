@@ -1,0 +1,30 @@
+package ejercicio03;
+
+import ejercicio02.TemperaturaException;
+import utilidades.Leer;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a, b ,c, x;
+		
+		a=Leer.datoInt();
+		b=Leer.datoInt();
+		c=Leer.datoInt();
+				
+		CEcuacion2Grado e = new CEcuacion2Grado(a, b ,c);
+		
+		x=Leer.datoInt();
+		
+		try {
+			if(x<-273){
+				throw new EcuacionException("No puedes introducir temperaturas inferiores a -273ºC");
+			}
+			System.out.println(e.formulaMas(x));
+		}catch(EcuacionException e) {
+			System.err.println(e.getMessage());
+		}
+	}
+
+}

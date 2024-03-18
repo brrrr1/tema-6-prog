@@ -1,0 +1,10 @@
+package ejercicio03;
+
+public class AIgualBException extends Exception {
+public AIgualBException() {
+		
+	}
+	public AIgualBException(String mensaje) {
+		super(mensaje);
+	}
+}

@@ -1,0 +1,35 @@
+package ejercicio01;
+
+import utilidades.Leer;
+
+/*
+ * 1) Realizar un programa que haga las operaciones básicas de una calculadora solo con números enteros (sumar,
+resta, multiplicar, dividir y raíz cuadrada) teniendo en cuenta las posibles excepciones que se pueden producir
+(entrada de datos, división por cero, raíz de un número negativo, etc.)
+ */
+
+public class Principal {
+	int num1;
+	int num2;
+	
+	int dos = 2;
+	
+	int eleccion;
+	
+	do {
+		System.out.println("""
+				1) Sumar
+				2) Restar
+				3) Multiplicar
+				4) Dividir
+				5) Raíz cuadrada
+				""");
+		eleccion=Leer.datoInt();
+		switch(eleccion) {
+		case 1:
+			
+		}
+	}while(eleccion!=0);
+}
+
+
